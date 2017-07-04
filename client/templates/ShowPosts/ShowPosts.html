@@ -1,0 +1,14 @@
+<template name="ShowPosts">
+    <h1>Blog Posts</h1>
+        {{#each posts}}
+            {{>ShowPost}}
+        {{/each}}
+</template>
+
+<template name="ShowPost">
+    <div class="col-sm-4">
+        <h2 class="text-center text-capitalize">{{Title}}</h2>
+        <p class="text-center">{{Body}}</p>
+        <button class="btn btn-default"><span class="glyphicon glyphicon-heart-empty"></span> Like</button>
+    </div>
+</template>
