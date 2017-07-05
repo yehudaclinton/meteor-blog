@@ -15,6 +15,10 @@
                     <li class="active"><a href="/">Home</a></li>
                     <li><a href="/createpost">Create</a></li>
                     <li><a href="/showposts">Posts</a></li>
+                    {{#if isInRole 'admin'}}
+                    <li><a href="/admin">Admin Panel</a></li>
+                    {{/if}}
+                    <li>{{> loginButtons}}</li>
                 </ul>
             </div>
         </div>
