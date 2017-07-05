@@ -1,1 +1,2 @@
-Meteor.subscribe('allPosts');
+Meteor.subscribe('posts');
+Meteor.subscribe('comments');
