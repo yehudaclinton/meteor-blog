@@ -3,3 +3,9 @@ Template.ShowPosts.helpers({
         return Posts.find();
     }
 });
+
+Template.ShowPosts.events({
+    'click #readMore': function() {
+        Router.go('/post/' + this._id);
+    }
+});
