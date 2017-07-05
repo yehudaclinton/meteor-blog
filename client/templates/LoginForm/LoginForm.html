@@ -1,0 +1,40 @@
+<template name="LoginForm">
+    <div class="container">
+        <div class="col-xs-6" style="padding-right: 5%;">
+            <h3 class="text-center">Login</h3>
+            <form id="loginForm" class="form-horizontal">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="form-control btn btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-xs-6" style="padding-left: 5%; border-left: 1px dashed #333;">
+            <h3 class="text-center">Sign Up</h3>
+            <form id="registerForm" class="form-horizontal">
+                <div class="form-group">
+                    <label for="registration_username">Username</label>
+                    <input type="text" name="registration_username" id="registration_username" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="registration_email">Email</label>
+                    <input type="email" name="registration_email" id="registration_email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="registration_password">Password</label>
+                    <input type="password" name="registration_password" id="registration_password" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="form-control btn btn-primary">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</template>
