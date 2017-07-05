@@ -26,3 +26,5 @@ accounts-password
 accounts-ui
 alanning:roles
 check
+summernote:summernote
+fortawesome:fontawesome

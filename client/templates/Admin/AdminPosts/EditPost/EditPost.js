@@ -4,11 +4,20 @@ Template.EditPost.events({
 
         var title = event.target.postTitle.value;
         var body = event.target.postBody.value;
+        var postBody = $('#summernote').summernote('code');
 
-        Meteor.call('editPost', this._id, title, body, function(error) {
+
+
+        Meteor.call('editPost', this._id, title, body, postBody, function(error) {
             if(!error) {
                 Router.go('/admin/posts');
             }
         });
     }
+});
+
+Template.EditPost.onRendered(function() {
+    $(document).ready(function() {
+        $('#summernote').summernote();
+    });
 });
