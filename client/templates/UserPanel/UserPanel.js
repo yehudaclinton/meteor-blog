@@ -1,14 +1,17 @@
 Template.UserPanel.events({
-    'submit #changePassword': function() {
+    'submit #newUser': function() {
         event.preventDefault();
 
-        var oldPW = event.target.oldPassword.value;
-        var newPW = event.target.newPassword.value;
+        var userName = event.target.username.value;
+        var email = event.target.email.value;
+        var password = event.target.newPassword.value;
 
-        Accounts.changePassword(oldPW, newPW, function(error) {
+Accounts.createUser({username: userName, email: email, password: password});
+
+        /*Accounts.changePassword(oldPW, newPW, function(error) {
             if(!error) {
                 alert("Password has been changed.");
             }
-        });
+        });*/
     }
 });
