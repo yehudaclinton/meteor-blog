@@ -1,8 +1,10 @@
 <template name="ShowPosts">
+  <div>
     <h1>Blog Posts</h1>
         {{#each posts}}
             {{>ShowPost}}
         {{/each}}
+  </div>
 </template>
 
 <template name="ShowPost">
